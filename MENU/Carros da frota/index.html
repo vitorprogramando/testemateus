@@ -1,0 +1,359 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carros da Frota</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="img/neurox.jpg" alt="logo_img" />
+        </span>
+        <span class="logo_name">NEUROX</span>
+        <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Painel</span>
+              <span class="line"></span>
+            </div>
+            <hr />
+            <li class="item">
+              <a href="../index.html" class="link flex">
+                <i class="bx bx-home-alt"></i>
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="index.html" class="link flex">
+                <i class="bx bx-grid-alt"></i>
+                <span>Carros da Frota</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="../CRLV/index.html" class="link flex">
+                <i class="bx bx-folder"></i>
+                <span>CRLV</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Serviços</span>
+              <span class="line"></span>
+            </div>
+            <hr />
+            <li class="item">
+              <a href="../lavagens/index.html" class="link flex">
+                <i class="bx bxs-magic-wand"></i>
+                <span>Lavagens</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="../Abastecimento/index.html" class="link flex">
+                <i class="bx bx-folder"></i>
+                <span>Abastecimentos</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="../Manutenções/index.html" class="link flex">
+                <i class="bx bx-cog"></i>
+                <span>Manutenções</span>
+              </a>
+            </li>
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Sobre</span>
+              <span class="line"></span>
+            </div>
+            <hr />
+            <li class="item">
+              <a href="../Multas/index.html" class="link flex">
+                <i class="bx bx-flag"></i>
+                <span>Multas</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="../responsaveis/index.html" class="link flex">
+                <i class="bx bx-award"></i>
+                <span>Responsáveis</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar_profile flex">
+          <span class="nav_image">
+            <img src="img/mecanico.png" alt="logo_img" />
+          </span>
+          <div class="data_text">
+            <span class="name">Neurox</span>
+            <br>
+            <span class="email">Sistema de controle</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <center>
+      <h1><i>⬇️Tabela com todas as informações da Frota⬇️</i></h1>
+      <br>
+      <p>Para gerar um pdf das informações abaixo clique em imprimir ⬇️</p>
+      <br>
+      <br>
+      <div id="pdf2htmldiv">
+      <table border="1" class="tabela">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Versão</th>
+                <th>Placa</th>
+                <th>Renavam</th>
+                <th>Fab/mod</th>
+                <th>Proprietário</th>
+                <th>Data da compra</th>
+                <th>Local (Base)</th>
+                <th>Responsável</th>
+                <th>IPVA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Saveiro</td>
+                <td>RB MBVS</td>
+                <td>QSM-4789</td>
+                <td>1210228901</td>
+                <td>2019/2020</td>
+                <td>Neurox</td>
+                <td>11/10/2019</td>
+                <td>Salvador/BA</td>
+                <td>Alex</td>
+                <td>01/09/2023</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Saveiro</td>
+                <td>RB MBVS</td>
+                <td>QSH-5D53</td>
+                <td>01227632778</td>
+                <td>2020/2021</td>
+                <td>Neurox</td>
+                <td>09/03/2020</td>
+                <td>Maceió/AL</td>
+                <td>Sérgio</td>
+                <td>01/03/2023</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Saveiro</td>
+                <td>RB MBVS</td>
+                <td>QFJ-8I42</td>
+                <td>01255591126</td>
+                <td>2021/2022</td>
+                <td>Neurox</td>
+                <td>01/02/2021</td>
+                <td>Fortaleza/CE</td>
+                <td>Paulo</td>
+                <td>01/02/2023</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Saveiro</td>
+              <td>RB MBVS</td>
+              <td>QSB-2333</td>
+              <td>1184752912</td>
+              <td>2019/2019</td>
+              <td>Neurox</td>
+              <td>11/05/2022</td>
+              <td>Salvador/BA</td>
+              <td>Alex</td>
+              <td>01/03/2023</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Saveiro</td>
+            <td>RB MBVS</td>
+            <td>QSM-8E95</td>
+            <td>01230233048</td>
+            <td>2020/2021</td>
+            <td>Neurox</td>
+            <td>26/01/2022</td>
+            <td>Aracaju/SE</td>
+            <td>Ronaldo-SE</td>
+            <td>01/05/2023</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>Saveiro</td>
+          <td>RB MBVS</td>
+          <td>PDZ-8G95</td>
+          <td>1173237949</td>
+          <td>2018/2019</td>
+          <td>Neurox</td>
+          <td>31/05/2022</td>
+          <td>Maceió/AL</td>
+          <td>Sérgio</td>
+          <td>01/05/2023</td>
+      </tr>
+        <tr>
+          <td>07</td>
+          <td>Saveiro</td>
+          <td>TL MBVS</td>
+          <td>QTT-3F49</td>
+          <td>01190049926</td>
+          <td>2019/2020</td>
+          <td>Neurox</td>
+          <td>28/04/2022</td>
+          <td>Recife/PE</td>
+          <td>Valdson</td>
+          <td>01/09/2023</td>
+      </tr>
+      <tr>
+        <td>08</td>
+        <td>Saveiro</td>
+        <td>RB MBVS</td>
+        <td>QFV-7A32</td>
+        <td>01319200319</td>
+        <td>2022/2023</td>
+        <td>Neurox</td>
+        <td>21/08/2022</td>
+        <td>João Pessoa/PB</td>
+        <td>Felipe</td>
+        <td>01/02/2023</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>Saveiro</td>
+      <td>RB MBVS</td>
+      <td>QFV-7A62</td>
+      <td>01319201056</td>
+      <td>2022/2023</td>
+      <td>Neurox</td>
+      <td>22/07/2022</td>
+      <td>Itabuna/BA</td>
+      <td>Cássio</td>
+      <td>01/02/2023</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Saveiro</td>
+    <td>RB MBVS</td>
+    <td>QFV-7B02</td>
+    <td>01319201838</td>
+    <td>2022/2023</td>
+    <td>Neurox</td>
+    <td>22/07/2022</td>
+    <td>Fortaleza/CE</td>
+    <td>Ronaldo-CE</td>
+    <td>01/02/2023</td>
+</tr>
+<tr>
+  <td>11</td>
+  <td>Saveiro</td>
+  <td>RB MBVS</td>
+  <td>QFW-6I92</td>
+  <td>01320047618</td>
+  <td>2022/2023</td>
+  <td>Neurox</td>
+  <td>22/07/2022</td>
+  <td>Manaus/AM</td>
+  <td>Rosivaldo</td>
+  <td>01/02/2023</td>
+</tr>
+<tr>
+  <td>12</td>
+  <td>Saveiro</td>
+  <td>RB MBVS</td>
+  <td>SKW-1C09</td>
+  <td>01339669215</td>
+  <td>2022/2023</td>
+  <td>Neurox</td>
+  <td>30/12/2022</td>
+  <td>João Pessoa/PB</td>
+  <td>Douglas</td>
+  <td>03/02/2023</td>
+</tr>
+<tr>
+  <td>13</td>
+  <td>Saveiro</td>
+  <td>RB MBVS</td>
+  <td>SKY-7D17</td>
+  <td>01356583080</td>
+  <td>2023/2023</td>
+  <td>Neurox</td>
+  <td>#######</td>
+  <td>João Pessoa/PB</td>
+  <td>Marinesio</td>
+  <td>01/07/2023</td>
+</tr>
+    </table>
+      </div>
+      <br>
+      <input type="button" onclick="printDiv('pdf2htmldiv')" id="new" value="Imprimir" />
+    <br>
+    <br>
+    </center>
+    <style>
+      .tabela, th, td{
+    border-collapse: collapse; /*define a separação entre as bordar*/
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background-color: rgb(24, 116, 236);
+    color: aliceblue;
+}
+#new {
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(24, 116, 236);
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #3b4042;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  position: center;
+  }
+
+    </style>
+
+<script>
+	function printDiv(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+		var originalContents = document.body.innerHTML;
+
+		document.body.innerHTML = printContents;
+
+		window.print();
+
+		document.body.innerHTML = originalContents;
+	}
+</script>
+    
+  </body>
+</html>
